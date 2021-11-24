@@ -1,0 +1,32 @@
+.container {
+  display: grid;
+  grid-template-columns: 45rem auto auto;
+  grid-gap: 1rem;
+  grid-auto-flow: row;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.blocks {
+  border: royalblue solid 4px;
+  border-radius: 10px;
+  animation-name: pulse;
+}
+
+@keyframes blocks {
+  from {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  to {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.blocks:hover {
+  background-color: lightskyblue;
+}
